@@ -11,11 +11,13 @@ COMMAND SERVER SETUP
 To configure the program to send data to your server, change the domain and path in src/index.ts (lines 29-35):
 
 domain: "127.0.0.1", ← change to your server address port: 80, ← 80 for HTTP, 443 for HTTPS path: "x.php", ← path to your PHP script
+
 STEP 1: DEPLOY THE PHP SCRIPT ON YOUR SERVER
 
 On your server (e.g., your-server.com), place a PHP script that receives and saves files.
 
 Make sure your web server (Apache/Nginx) is running and PHP is configured to handle POST requests.
+
 STEP 2: BUILD
 
 bun install bun run build
